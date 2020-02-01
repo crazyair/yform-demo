@@ -1,0 +1,31 @@
+{
+  "name": "yform-demo",
+  "version": "0.0.1",
+  "homepage": "https://crazyair.github.io/yform-demo",
+  "description": "",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "authors": {
+    "name": "crazyair",
+    "email": "645381995@qq.com"
+  },
+  "repository": "/yform-demo",
+  "scripts": {
+    "dev": "father doc dev",
+    "doc:build": "father doc build",
+    "build": "father build",
+    "pub": "yarn test && yarn publish"
+  },
+  "peerDependencies": {
+    "react": "16.x"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "files": ["dist"],
+  "devDependencies": {
+    "father": "^2.16.0",
+    "typescript": "^3.3.3"
+  },
+  "license": "MIT"
+}

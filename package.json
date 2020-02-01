@@ -22,10 +22,25 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
+    "@types/classnames": "^2.2.9",
+    "@types/warning": "^3.0.0",
     "father": "^2.16.0",
     "typescript": "^3.3.3"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@types/lodash": "^4.14.149",
+    "antd": "^4.0.0-rc.3",
+    "classnames": "^2.2.6",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "numbro": "^2.1.2",
+    "nzh": "^1.0.4",
+    "rc-util": "^4.19.0",
+    "warning": "^4.0.3"
+  }
 }

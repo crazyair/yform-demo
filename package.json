@@ -29,6 +29,10 @@
         "@types/classnames": "^2.2.9",
         "@types/warning": "^3.0.0",
         "@typescript-eslint/eslint-plugin": "^2.13.0",
+        "@typescript-eslint/parser": "^2.18.0",
+        "@yzh-devkit/eslint-config-lint": "^1.0.3",
+        "babel-plugin-import": "^1.13.0",
+        "eslint-config-airbnb": "^18.0.1",
         "father": "^2.16.0",
         "typescript": "^3.3.3"
     },
@@ -36,20 +40,20 @@
     "dependencies": {
         "@ant-design/icons": "^4.0.0-rc.0",
         "@types/lodash": "^4.14.149",
-        "react-copy-to-clipboard": "^5.0.1",
-        "react-simple-code-editor": "^0.10.0",
-        "lz-string": "^1.4.4",
-        "prismjs": "^1.17.1",
         "antd": "^4.0.0-rc.3",
         "classnames": "^2.2.6",
         "docz-theme-umi": "^2.1.1",
         "lodash": "^4.17.15",
+        "lz-string": "^1.4.4",
         "moment": "^2.24.0",
         "numbro": "^2.1.2",
         "nzh": "^1.0.4",
+        "prismjs": "^1.17.1",
         "rc-util": "^4.19.0",
         "react": "^16.12.0",
+        "react-copy-to-clipboard": "^5.0.1",
         "react-dom": "^16.12.0",
+        "react-simple-code-editor": "^0.10.0",
         "warning": "^4.0.3"
     }
 }

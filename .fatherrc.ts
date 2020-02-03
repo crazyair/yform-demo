@@ -4,6 +4,20 @@ const options: IBundleOptions = {
     entry: 'src/index',
     cjs: 'rollup',
     esm: 'rollup',
+    preCommit: {
+        eslint: true,
+        prettier: true,
+    },
+    extraBabelPlugins: [
+        [
+            'babel-plugin-import',
+            {
+                libraryName: 'antd',
+                libraryDirectory: 'es',
+                style: true,
+            },
+        ],
+    ],
     doc: {
         typescript: true,
         files: './**/*.{md,markdown,mdx}',
@@ -11,16 +25,6 @@ const options: IBundleOptions = {
         themeConfig: {
             codemirrorTheme: 'dracula',
         },
-        extraBabelPlugins: [
-            [
-                'babel-plugin-import',
-                {
-                    libraryName: 'antd',
-                    libraryDirectory: 'es',
-                    style: true,
-                },
-            ],
-        ],
     },
 } as any;
 

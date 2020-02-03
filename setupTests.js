@@ -1,3 +1,5 @@
+import '@babel/polyfill';
+
 const React = require('react');
 
 // eslint-disable-next-line no-console

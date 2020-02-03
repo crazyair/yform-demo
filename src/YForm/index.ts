@@ -4,8 +4,6 @@ import Items from './Items';
 import ItemsType from './ItemsType';
 import { submitFormatValues, onFormatFieldsValue } from './utils';
 
-import '@babel/polyfill';
-
 import './index.less';
 
 type InternalYForm = typeof YForm;

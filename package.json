@@ -1,6 +1,6 @@
 {
     "name": "yform-demo",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "homepage": "https://crazyair.github.io/yform-demo",
     "description": "",
     "main": "dist/index.js",
@@ -15,7 +15,7 @@
         "test": "father test",
         "doc:build": "father doc build",
         "build": "father build",
-        "pub": "yarn test && yarn publish"
+        "pub": "yarn test && yarn build && yarn publish"
     },
     "publishConfig": {
         "registry": "https://registry.npmjs.org/"

@@ -2,8 +2,8 @@ import { IBundleOptions } from 'father';
 
 const options: IBundleOptions = {
     entry: 'src/index',
-    cjs: 'rollup',
-    esm: 'rollup',
+    cjs: 'babel',
+    esm: 'babel',
     preCommit: {
         eslint: true,
         prettier: true,

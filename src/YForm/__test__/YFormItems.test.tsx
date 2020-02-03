@@ -4,7 +4,7 @@ import { render } from '@testing-library/react';
 import KeyCode from 'rc-util/lib/KeyCode';
 import { mount } from 'enzyme';
 import { Input } from 'antd';
-import { YForm } from '../../index';
+import YForm from '../../index';
 import { YFormItemsProps } from '../Items';
 
 const delay = (timeout = 0) =>

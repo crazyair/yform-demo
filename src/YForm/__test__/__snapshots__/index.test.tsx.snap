@@ -520,7 +520,7 @@ Object {
 }
 `;
 
-exports[`YForm layout 2`] = `
+exports[`YForm layout2 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>

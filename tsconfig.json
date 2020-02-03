@@ -1,6 +1,5 @@
 {
     "compilerOptions": {
-        "sourceMap": true,
         "baseUrl": "./",
         "paths": {
             "yform": ["src/*"]
@@ -19,5 +18,5 @@
         "lib": ["dom", "es2017"]
     },
     "include": ["src/**/*", "typings.d.ts", "src/index.tsx"],
-    "exclude": ["node_modules", "dist", "src/**/__test__/*"]
+    "exclude": ["node_modules", "lib", "es", "src/**/__test__/*", "src/**/demo/*"]
 }

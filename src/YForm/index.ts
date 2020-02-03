@@ -1,15 +1,17 @@
 import { Form as AntForm } from 'antd';
 import YForm, { Config, useFormatFieldsValue } from './Form';
 import Items from './Items';
-import itemsType from './ItemsType';
+import ItemsType from './ItemsType';
 import { submitFormatValues, onFormatFieldsValue } from './utils';
+
+import '@babel/polyfill';
 
 import './index.less';
 
 type InternalYForm = typeof YForm;
 interface RefYForm extends InternalYForm {
   config: typeof Config;
-  ItemsType: typeof itemsType;
+  ItemsType: typeof ItemsType;
   Items: typeof Items;
   Item: typeof AntForm.Item;
   useFormatFieldsValue: typeof useFormatFieldsValue;
@@ -19,7 +21,7 @@ interface RefYForm extends InternalYForm {
 
 const Form: RefYForm = YForm as RefYForm;
 
-Form.ItemsType = itemsType;
+Form.ItemsType = ItemsType;
 Form.config = Config;
 Form.Items = Items;
 Form.Item = AntForm.Item;

@@ -33,5 +33,6 @@ module.exports = {
 		'no-lonely-if': 0,
 		'no-undef': 0,
 		'no-tabs': 0,
+		'no-mixed-spaces-and-tabs': 0,
 	},
 };

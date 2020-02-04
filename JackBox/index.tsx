@@ -151,7 +151,9 @@ ReactDOM.render(
 					'yform-demo': 'latest',
 				},
 				devDependencies: {
-					typescript: '3.3.3',
+					typescript: '3.7.5',
+					'@types/react': '16.9.19',
+					'@types/react-dom': '16.9.5',
 				},
 				template: 'create-react-app-typescript',
 				fileName: 'demo.tsx',
@@ -186,7 +188,6 @@ ReactDOM.render(
 				deps: {
 					...dep,
 					react: '^16.8.0',
-					'@babel/runtime': '^7.6.3',
 					'yform-demo': 'latest',
 				},
 				devDependencies: {

@@ -1,11 +1,9 @@
 {
     "name": "yform-demo",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "homepage": "https://crazyair.github.io/yform-demo",
     "description": "",
-    "main": "lib/index.js",
-    "module": "es/index.js",
-    "typings": "lib/index.d.ts",
+    "main": "dist/index.esm.js",
     "authors": {
         "name": "crazyair",
         "email": "645381995@qq.com"
@@ -16,22 +14,16 @@
         "test": "father test",
         "doc:build": "father doc build",
         "build": "father build",
+        "lint:tsc": "tsc -p tsconfig.json --noEmit",
         "pub": "yarn test && yarn build && yarn publish"
     },
     "publishConfig": {
         "registry": "https://registry.npmjs.org/"
     },
     "files": [
-        "dist",
-        "lib",
-        "es"
+        "dist"
     ],
-    "sideEffects": [
-        "dist/*",
-        "es/**/style/*",
-        "lib/**/style/*",
-        "*.less"
-    ],
+    "sideEffects": false,
     "devDependencies": {
         "@babel/polyfill": "^7.8.3",
         "@testing-library/jest-dom": "^4.2.0",

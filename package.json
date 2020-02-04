@@ -15,6 +15,7 @@
         "test": "father test",
         "doc:build": "father doc build",
         "build": "father build",
+        "lint:es": "eslint --ext .js,jsx,ts,tsx src",
         "lint:tsc": "tsc -p tsconfig.json --noEmit",
         "pub": "yarn test && yarn build && yarn publish"
     },

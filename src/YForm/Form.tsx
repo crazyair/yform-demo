@@ -71,9 +71,9 @@ const InternalForm = (props: YFormProps) => {
   }
   if (loading) {
     return (
-        <div className="form-spin">
-            <Spin />
-        </div>
+      <div className="form-spin">
+        <Spin />
+      </div>
     );
   }
   const handleOnFinish = (value: KeyValue) => {
@@ -87,11 +87,11 @@ const InternalForm = (props: YFormProps) => {
   };
 
   return (
-      <Form {...rest} onFinish={handleOnFinish}>
-          <YFormContext.Provider value={_props}>
-              <Items>{children}</Items>
-          </YFormContext.Provider>
-      </Form>
+    <Form {...rest} onFinish={handleOnFinish}>
+      <YFormContext.Provider value={_props}>
+        <Items>{children}</Items>
+      </YFormContext.Provider>
+    </Form>
   );
 };
 

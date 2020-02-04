@@ -20,20 +20,20 @@ const ContainerComponent: React.FC = () => {
     }, 10);
   }, []);
   return (
-      <YForm
-          {...layout}
-          loading={loading}
-          initialValues={data}
-          required
-          name="basic"
-          onFinish={onFinish}
-          onFinishFailed={onFinishFailed}
-      >
-          {[
+    <YForm
+      {...layout}
+      loading={loading}
+      initialValues={data}
+      required
+      name="basic"
+      onFinish={onFinish}
+      onFinishFailed={onFinishFailed}
+    >
+      {[
         { type: 'input', label: 'name', name: 'name' },
         { type: 'input', label: 'age', name: 'age' },
       ]}
-      </YForm>
+    </YForm>
   );
 };
 export default ContainerComponent;

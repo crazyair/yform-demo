@@ -13,14 +13,14 @@ export default (props: YFormItemProps) => {
   });
 
   return children ? (
-      <Form.Item
-          required={_required}
-          {...omit(rest, ['name', 'rules', 'dependencies', 'shouldUpdate'])}
-      >
-          <Form.Item noStyle {...rest}>
-              {children as FormItemProps['children']}
-          </Form.Item>
-          <>{addonAfter}</>
+    <Form.Item
+      required={_required}
+      {...omit(rest, ['name', 'rules', 'dependencies', 'shouldUpdate'])}
+    >
+      <Form.Item noStyle {...rest}>
+        {children as FormItemProps['children']}
       </Form.Item>
+      <>{addonAfter}</>
+    </Form.Item>
   ) : null;
 };

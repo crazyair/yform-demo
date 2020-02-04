@@ -1,6 +1,6 @@
 {
     "name": "yform-demo",
-    "version": "0.0.7",
+    "version": "0.0.9",
     "homepage": "https://crazyair.github.io/yform-demo",
     "description": "",
     "main": "dist/index.esm.js",
@@ -44,26 +44,30 @@
         "eslint-config-airbnb": "^18.0.1",
         "father": "^2.16.0",
         "jest": "^25.1.0",
+        "@types/lodash": "^4.14.149",
+        "docz-theme-umi": "^2.1.1",
+        "lz-string": "^1.4.4",
+        "prismjs": "^1.17.1",
+        "rc-util": "^4.19.0",
+        "react-copy-to-clipboard": "^5.0.1",
+        "react-simple-code-editor": "^0.10.0",
+        "react": "^16.12.0",
+        "react-dom": "^16.12.0",
         "typescript": "^3.3.3"
     },
-    "license": "MIT",
+    "peerDependencies": {
+        "react": ">=16.8.0",
+        "react-dom": ">=16.8.0"
+    },
     "dependencies": {
         "@ant-design/icons": "^4.0.0-rc.0",
-        "@types/lodash": "^4.14.149",
         "antd": "^4.0.0-rc.3",
         "classnames": "^2.2.6",
-        "docz-theme-umi": "^2.1.1",
         "lodash": "^4.17.15",
-        "lz-string": "^1.4.4",
         "moment": "^2.24.0",
         "numbro": "^2.1.2",
         "nzh": "^1.0.4",
-        "prismjs": "^1.17.1",
-        "rc-util": "^4.19.0",
-        "react": "^16.12.0",
-        "react-copy-to-clipboard": "^5.0.1",
-        "react-dom": "^16.12.0",
-        "react-simple-code-editor": "^0.10.0",
         "warning": "^4.0.3"
-    }
+    },
+    "license": "MIT"
 }

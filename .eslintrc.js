@@ -93,6 +93,7 @@ const eslintrc = {
         'no-else-return': 0,
         'no-void': 0,
         'no-control-regex': 0,
+        'jsx-a11y/label-has-associated-control': 0,
         'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
     },
     globals: {

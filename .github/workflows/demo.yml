@@ -3,11 +3,10 @@ on:
     branches:
       - master  
 
-name: Create Release
+name: demo
 
 jobs:
   publish-npm:
-    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

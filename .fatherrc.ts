@@ -5,7 +5,6 @@ const options: IBundleOptions = {
 	// cjs: 'rollup',
 	esm: 'rollup',
 	preCommit: { eslint: true, prettier: true },
-	cssModules: false,
 	extraBabelPlugins: [['babel-plugin-import', { libraryName: 'antd', libraryDirectory: 'es', style: true }]],
 	doc: {
 		typescript: true,

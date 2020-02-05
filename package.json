@@ -1,7 +1,7 @@
 {
 	"name": "yform-demo",
 	"version": "1.1.2",
-	"homepage": "http://yform-demo.crazyair.cn",
+	"homepage": "https://crazyair.github.io/yform-demo",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/crazyair/yform-demo"
@@ -28,7 +28,6 @@
 	"files": [
 		"dist"
 	],
-	"sideEffects": false,
 	"devDependencies": {
 		"@babel/polyfill": "^7.8.3",
 		"@testing-library/jest-dom": "^4.2.0",

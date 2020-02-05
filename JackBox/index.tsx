@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/prefer-regexp-exec */
 import React, { ReactNode, useState, useEffect } from 'react';
 import { Divider, message, Tooltip, Modal, Radio } from 'antd';
-import { CopyOutlined, FullscreenOutlined, CodeSandboxOutlined, CodeOutlined } from '@ant-design/icons';
+import { CopyOutlined, FullscreenOutlined, CodeSandboxOutlined, CodeOutlined, CodeFilled } from '@ant-design/icons';
 
 import CopyToClipboard from 'react-copy-to-clipboard';
 import Editor from 'react-simple-code-editor';
@@ -92,7 +92,7 @@ export default (props: JackBoxPlayGroudProps) => {
 	const tsRet = handleImport(props.tsCode || '');
 	const jsRet = handleImport(props.jsCode || '');
 	const currentLanguage = localStorage.getItem('umijs-hooks-code-language');
-	const [language, setLanguage] = useState(currentLanguage || 'js');
+	const [language, setLanguage] = useState(currentLanguage || 'ts');
 	const { locale = 'zh-CN' } = props;
 	const isChinese = locale === 'zh-CN';
 	const code = language === 'ts' ? tsRet[0] : jsRet[0];
@@ -241,7 +241,7 @@ ReactDOM.render(
 					<Divider dashed />
 					<div style={{ float: 'right', marginTop: -16 }}>
 						<span style={{ marginRight: 16 }}>
-							<span style={{ width: 'fit-content', marginRight: 16 }}>
+							<span style={{ width: 'fit-content', marginRight: 16, display: 'none' }}>
 								<Radio.Group
 									value={language}
 									size="small"
@@ -299,12 +299,11 @@ ReactDOM.render(
 							</button>
 						</form>
 						<Tooltip title={isChinese ? '查看代码' : 'view code'}>
-							<CodeOutlined
-								onClick={() => {
-									setExpand(e => !e);
-								}}
-								style={{ marginRight: 16 }}
-							/>
+							{expand ? (
+								<CodeFilled style={{ marginRight: 16 }} onClick={() => setExpand(e => !e)} />
+							) : (
+								<CodeOutlined style={{ marginRight: 16 }} onClick={() => setExpand(e => !e)} />
+							)}
 						</Tooltip>
 					</div>
 				</div>

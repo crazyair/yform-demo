@@ -1,9 +1,17 @@
 import { IBundleOptions } from 'father';
 
 const options: IBundleOptions = {
-  cjs: 'rollup',
-  esm: 'rollup',
-  doc: { typescript: true },
-};
+    entry: 'src/index.tsx',
+    // cjs: 'rollup',
+    esm: 'rollup',
+    preCommit: { eslint: true, prettier: true },
+    extraBabelPlugins: [['babel-plugin-import', { libraryName: 'antd', libraryDirectory: 'es', style: true }]],
+    doc: {
+        typescript: true,
+        files: './**/*.{md,markdown,mdx}',
+        theme: 'docz-theme-umi',
+        themeConfig: { codemirrorTheme: 'dracula' },
+    },
+} as any;
 
 export default options;

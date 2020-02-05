@@ -3,7 +3,10 @@
 /dist
 /.docz
 /node_modules
+/lib
+/es
 
 /.history
 /.docz
 /.doc
+/coverage

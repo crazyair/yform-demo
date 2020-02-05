@@ -1,0 +1,15 @@
+---
+name: YForm
+route: /yform
+order: 1
+---
+
+import JackBox from '../../JackBox';
+import Alert from './demo/demo1.tsx';
+import Demo1CodeTsx from '!raw-loader!./demo/demo1.tsx';
+
+## 代码演示
+
+<JackBox tsCode={Demo1CodeTsx} demoName="默认用法" description="组件加载时立即执行">
+    <Alert />
+</JackBox>

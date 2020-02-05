@@ -199,7 +199,7 @@ ReactDOM.render(
 				fileName: 'demo.jsx',
 			};
 		}
-		setParam(finaliseCSB(language === 'ts' ? tsData : jsData, { name: 'hooks-demo' }).parameters);
+		setParam(finaliseCSB(language === 'ts' ? tsData : jsData, { name: 'yform-demo' }).parameters);
 	}, [props.tsCode, props.jsCode, language, code, dep]);
 
 	return (

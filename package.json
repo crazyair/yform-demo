@@ -17,7 +17,7 @@
 		"build": "father build",
 		"lint:es": "eslint --ext .js,jsx,ts,tsx src",
 		"lint:tsc": "tsc -p tsconfig.json --noEmit",
-		"pub": "yarn && yarn test && yarn build && yarn publish"
+		"pub": "yarn publish"
 	},
 	"publishConfig": {
 		"registry": "https://registry.npmjs.org/"

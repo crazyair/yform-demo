@@ -4,7 +4,7 @@
 	"homepage": "https://crazyair.github.io/yform-demo",
 	"repository": {
 		"type": "git",
-		"url": "https://crazyair.github.io/yform-demo"
+		"url": "https://github.com/crazyair/yform-demo"
 	},
 	"description": "自定义表单组件",
 	"main": "dist/index.esm.js",

@@ -1,15 +1,18 @@
 {
 	"name": "yform-demo",
-	"version": "0.0.7",
+	"version": "1.1.1",
 	"homepage": "https://crazyair.github.io/yform-demo",
-	"description": "",
+	"repository": {
+		"type": "git",
+		"url": "https://crazyair.github.io/yform-demo"
+	},
+	"description": "自定义表单组件",
 	"main": "dist/index.esm.js",
 	"typings": "dist/index.d.ts",
 	"authors": {
 		"name": "crazyair",
 		"email": "645381995@qq.com"
 	},
-	"repository": "/yform-demo",
 	"scripts": {
 		"dev": "father doc dev",
 		"test": "father test",

@@ -7,7 +7,7 @@ const options: IBundleOptions = {
     // cjs: 'babel',
     // esm: 'babel',
     preCommit: { eslint: true, prettier: true },
-    extraBabelPlugins: [['babel-plugin-import', { libraryName: 'antd', libraryDirectory: 'es', style: true }]],
+    // extraBabelPlugins: [['babel-plugin-import', { libraryName: 'antd', libraryDirectory: 'es', style: true }]],
     doc: {
         typescript: true,
         title: 'yform-demo',

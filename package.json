@@ -1,6 +1,6 @@
 {
     "name": "yform-demo",
-    "version": "1.1.4-20",
+    "version": "1.1.4-27",
     "homepage": "https://crazyair.github.io/yform-demo",
     "repository": {
         "type": "git",
@@ -26,8 +26,6 @@
         "registry": "https://registry.npmjs.org/"
     },
     "files": [
-        "lib",
-        "es",
         "dist"
     ],
     "devDependencies": {

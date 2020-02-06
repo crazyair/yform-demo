@@ -16,7 +16,7 @@ yarn add yform-demo
 
 ```jsx
 import React from 'react';
-import YForm from 'yform-demo';
+import { YForm } from 'yform-demo';
 
 const Demo = () => {
     return (

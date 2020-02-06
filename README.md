@@ -16,58 +16,58 @@ yarn add yform-demo
 
 ```tsx
 <YForm>
-	{[
-		{ label: 'text', name: 'text', type: 'text' },
-		{
-			type: 'checkbox',
-			name: '多选',
-			componentProps: { children: '我确定' },
-		},
-		{
-			label: '单选框',
-			type: 'radio',
-			name: '单选框',
-			componentProps: {
-				options: [
-					{ name: 'Apple', id: '1' },
-					{ name: 'Pear', id: '2' },
-				],
-			},
-		},
-		{
-			type: 'textarea',
-			name: '长文本',
-			label: '长文本',
-			componentProps: { inputMax: 10 },
-		},
-		{ type: 'money', label: '金钱', name: '金钱' },
-		{
-			label: '一行多字段',
-			type: 'oneLine',
-			componentProps: { oneLineStyle: ['50%', 8, '50%'] },
-			items: () => [
-				{ label: '姓名', type: 'input', name: 'name' },
-				<span key="center" />,
-				{ label: '年龄', type: 'input', name: 'age' },
-			],
-		},
-		{
-			type: 'list',
-			name: 'phones',
-			label: '动态增删',
-			items: ({ index }) => [{ type: 'input', name: [index, 'phone'] }],
-		},
-		{
-			dataSource: [
-				{
-					type: 'button',
-					noStyle: true,
-					plugins: { disabled: false },
-					componentProps: { type: 'primary', htmlType: 'submit', children: '提交' },
-				},
-			],
-		},
-	]}
+    {[
+        { label: 'text', name: 'text', type: 'text' },
+        {
+            type: 'checkbox',
+            name: '多选',
+            componentProps: { children: '我确定' },
+        },
+        {
+            label: '单选框',
+            type: 'radio',
+            name: '单选框',
+            componentProps: {
+                options: [
+                    { name: 'Apple', id: '1' },
+                    { name: 'Pear', id: '2' },
+                ],
+            },
+        },
+        {
+            type: 'textarea',
+            name: '长文本',
+            label: '长文本',
+            componentProps: { inputMax: 10 },
+        },
+        { type: 'money', label: '金钱', name: '金钱' },
+        {
+            label: '一行多字段',
+            type: 'oneLine',
+            componentProps: { oneLineStyle: ['50%', 8, '50%'] },
+            items: () => [
+                { label: '姓名', type: 'input', name: 'name' },
+                <span key="center" />,
+                { label: '年龄', type: 'input', name: 'age' },
+            ],
+        },
+        {
+            type: 'list',
+            name: 'phones',
+            label: '动态增删',
+            items: ({ index }) => [{ type: 'input', name: [index, 'phone'] }],
+        },
+        {
+            dataSource: [
+                {
+                    type: 'button',
+                    noStyle: true,
+                    plugins: { disabled: false },
+                    componentProps: { type: 'primary', htmlType: 'submit', children: '提交' },
+                },
+            ],
+        },
+    ]}
 </YForm>
 ```
 

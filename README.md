@@ -23,7 +23,17 @@ const Demo = () => {
         <YForm>
             {[
                 { type: 'input', label: '姓名', name: 'name' },
-                { type: 'input', label: '年龄', name: 'age' },
+                {
+                    type: 'radio',
+                    label: '性别',
+                    name: 'gender',
+                    componentProps: {
+                        options: [
+                            { id: true, name: '男' },
+                            { id: false, name: '女' },
+                        ],
+                    },
+                },
             ]}
         </YForm>
     );

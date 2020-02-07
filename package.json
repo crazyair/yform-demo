@@ -1,75 +1,75 @@
 {
-	"name": "yform-demo",
-	"version": "1.1.2",
-	"homepage": "https://crazyair.github.io/yform-demo",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/crazyair/yform-demo"
-	},
-	"description": "自定义表单组件",
-	"main": "dist/index.esm.js",
-	"typings": "dist/index.d.ts",
-	"authors": {
-		"name": "crazyair",
-		"email": "645381995@qq.com"
-	},
-	"scripts": {
-		"dev": "father doc dev",
-		"test": "father test",
-		"doc:build": "father doc build",
-		"build": "father build",
-		"lint:es": "eslint --ext .js,jsx,ts,tsx src",
-		"lint:tsc": "tsc -p tsconfig.json --noEmit",
-		"pub": "yarn publish"
-	},
-	"publishConfig": {
-		"registry": "https://registry.npmjs.org/"
-	},
-	"files": [
-		"dist"
-	],
-	"devDependencies": {
-		"@babel/polyfill": "^7.8.3",
-		"@testing-library/jest-dom": "^4.2.0",
-		"@testing-library/react": "^9.4.0",
-		"@testing-library/react-hooks": "^3.1.1",
-		"@types/classnames": "^2.2.9",
-		"@types/enzyme": "^3.10.3",
-		"@types/enzyme-adapter-react-16": "^1.0.5",
-		"@types/jest": "^25.1.1",
-		"@types/lodash": "^4.14.149",
-		"@types/warning": "^3.0.0",
-		"@typescript-eslint/eslint-plugin": "^2.13.0",
-		"@typescript-eslint/parser": "^2.18.0",
-		"babel-plugin-import": "^1.13.0",
-		"enzyme": "^3.11.0",
-		"enzyme-adapter-react-16": "^1.15.2",
-		"eslint-config-airbnb": "^18.0.1",
-		"father": "^2.16.0",
-		"jest": "^25.1.0",
-		"lz-string": "^1.4.4",
-		"prismjs": "^1.17.1",
-		"rc-util": "^4.19.0",
-		"react": "^16.12.0",
-		"react-copy-to-clipboard": "^5.0.1",
-		"react-dom": "^16.12.0",
-		"docz-theme-umi-yform": "^0.0.8",
-		"react-simple-code-editor": "^0.10.0",
-		"typescript": "^3.3.3"
-	},
-	"peerDependencies": {
-		"react": ">=16.8.0",
-		"react-dom": ">=16.8.0"
-	},
-	"dependencies": {
-		"@ant-design/icons": "^4.0.0-rc.0",
-		"antd": "^4.0.0-rc.3",
-		"classnames": "^2.2.6",
-		"lodash": "^4.17.15",
-		"moment": "^2.24.0",
-		"numbro": "^2.1.2",
-		"nzh": "^1.0.4",
-		"warning": "^4.0.3"
-	},
-	"license": "MIT"
+    "name": "yform-demo",
+    "version": "1.1.4-27",
+    "homepage": "https://crazyair.github.io/yform-demo",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/crazyair/yform-demo"
+    },
+    "description": "自定义表单组件",
+    "main": "dist/index.esm.js",
+    "typings": "dist/index.d.ts",
+    "authors": {
+        "name": "crazyair",
+        "email": "645381995@qq.com"
+    },
+    "scripts": {
+        "dev": "father doc dev",
+        "test": "father test",
+        "doc:build": "father doc build",
+        "build": "father build",
+        "lint:es": "eslint --ext .js,jsx,ts,tsx src",
+        "lint:tsc": "tsc -p tsconfig.json --noEmit",
+        "pub": "yarn publish"
+    },
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org/"
+    },
+    "files": [
+        "dist"
+    ],
+    "devDependencies": {
+        "@babel/polyfill": "^7.8.3",
+        "@testing-library/jest-dom": "^4.2.0",
+        "@testing-library/react": "^9.4.0",
+        "@testing-library/react-hooks": "^3.1.1",
+        "@types/classnames": "^2.2.9",
+        "@types/enzyme": "^3.10.3",
+        "@types/enzyme-adapter-react-16": "^1.0.5",
+        "@types/jest": "^25.1.1",
+        "@types/lodash": "^4.14.149",
+        "@types/warning": "^3.0.0",
+        "@typescript-eslint/eslint-plugin": "^2.13.0",
+        "@typescript-eslint/parser": "^2.18.0",
+        "babel-plugin-import": "^1.13.0",
+        "enzyme": "^3.11.0",
+        "enzyme-adapter-react-16": "^1.15.2",
+        "eslint-config-airbnb": "^18.0.1",
+        "father": "^2.16.0",
+        "jest": "^25.1.0",
+        "lz-string": "^1.4.4",
+        "prismjs": "^1.17.1",
+        "rc-util": "^4.19.0",
+        "react": "^16.12.0",
+        "react-copy-to-clipboard": "^5.0.1",
+        "react-dom": "^16.12.0",
+        "docz-theme-umi-yform": "^0.0.8",
+        "react-simple-code-editor": "^0.10.0",
+        "typescript": "^3.3.3"
+    },
+    "peerDependencies": {
+        "react": ">=16.8.0",
+        "react-dom": ">=16.8.0"
+    },
+    "dependencies": {
+        "@ant-design/icons": "^4.0.0-rc.0",
+        "antd": "^4.0.0-rc.3",
+        "classnames": "^2.2.6",
+        "lodash": "^4.17.15",
+        "moment": "^2.24.0",
+        "numbro": "^2.1.2",
+        "nzh": "^1.0.4",
+        "warning": "^4.0.3"
+    },
+    "license": "MIT"
 }

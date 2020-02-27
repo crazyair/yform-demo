@@ -101,8 +101,13 @@ jobs:
     runs-on: ubuntu-latest
     env:
      changelog_file: 'CHANGELOG.md'
+     NODE_VERSION: '10.x'
     steps:
     - uses: actions/checkout@v1
+    - name: Use Node.js ${{ env.NODE_VERSION }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ env.NODE_VERSION }}
     - name: get changelog
       id: changelog
       # run: |

@@ -20,7 +20,17 @@
         "build": "father build",
         "lint:es": "eslint --ext .js,jsx,ts,tsx src",
         "lint:tsc": "tsc -p tsconfig.json --noEmit",
+        "changelog": "lerna-changelog",
         "pub": "yarn publish"
+    },
+    "changelog": {
+        "labels": {
+            "feat": ":rocket: New Feature",
+            "bug": ":bug: Bug Fix",
+            "doc": ":memo: Documentation",
+            "internal": ":house: Internal",
+            "breaking": ":boom: Breaking Change"
+        }
     },
     "publishConfig": {
         "registry": "https://registry.npmjs.org/"
@@ -42,18 +52,19 @@
         "@typescript-eslint/eslint-plugin": "^2.13.0",
         "@typescript-eslint/parser": "^2.18.0",
         "babel-plugin-import": "^1.13.0",
+        "docz-theme-umi-yform": "^0.0.8",
         "enzyme": "^3.11.0",
         "enzyme-adapter-react-16": "^1.15.2",
         "eslint-config-airbnb": "^18.0.1",
         "father": "^2.16.0",
         "jest": "^25.1.0",
+        "lerna-changelog": "^1.0.0",
         "lz-string": "^1.4.4",
         "prismjs": "^1.17.1",
         "rc-util": "^4.19.0",
         "react": "^16.12.0",
         "react-copy-to-clipboard": "^5.0.1",
         "react-dom": "^16.12.0",
-        "docz-theme-umi-yform": "^0.0.8",
         "react-simple-code-editor": "^0.10.0",
         "typescript": "^3.3.3"
     },

@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
+    - run: yarn changelog >> log.md
     - uses: ncipollo/release-action@v1
       with:
         artifacts: "release.tar.gz,foo/*.txt"

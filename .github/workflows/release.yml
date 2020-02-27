@@ -97,28 +97,46 @@ on:
 
 jobs:
 
+#   build:
+#     runs-on: ubuntu-latest
+#     env:
+#      changelog_file: 'CHANGELOG.md'
+#     steps:
+#     - uses: actions/checkout@v1
+#     - name: get changelog
+#       uses: actions/setup-node@v1
+#       with:
+#         node-version: 10.x
+#       id: changelog
+#       # run: |
+#       #     changelog=$(cat CHANGELOG.md | xargs)
+#       #     echo $changelog
+#       #     # changelog="${changelog//'%'/'%25'}"
+#       #     # changelog="${changelog//$'\n'/'%0A'}"
+#       #     # changelog="${changelog//$'\r'/'%0D'}"
+#       #     echo "::set-output name=changelog::$changelog"
+#       run: node ./log.js
+#     - uses: ncipollo/release-action@v1
+#       with:
+#         artifacts: "release.tar.gz,foo/*.txt"
+#         # bodyFile: "log.md"
+#         body: ${{ steps.changelog.outputs.changelog}}
+#         token: ${{ secrets.GITHUB_TOKEN }}
+
   build:
+
     runs-on: ubuntu-latest
-    env:
-     changelog_file: 'CHANGELOG.md'
+
+    strategy:
+      matrix:
+        node-version: [8.x, 10.x, 12.x]
+
     steps:
-    - uses: actions/checkout@v1
-    - name: get changelog
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
-        node-version: 10.x
-      id: changelog
-      # run: |
-      #     changelog=$(cat CHANGELOG.md | xargs)
-      #     echo $changelog
-      #     # changelog="${changelog//'%'/'%25'}"
-      #     # changelog="${changelog//$'\n'/'%0A'}"
-      #     # changelog="${changelog//$'\r'/'%0D'}"
-      #     echo "::set-output name=changelog::$changelog"
-      run: node ./log.js
-    - uses: ncipollo/release-action@v1
-      with:
-        artifacts: "release.tar.gz,foo/*.txt"
-        # bodyFile: "log.md"
-        body: ${{ steps.changelog.outputs.changelog}}
-        token: ${{ secrets.GITHUB_TOKEN }}
+        node-version: ${{ matrix.node-version }}
+    - run:  node ./log.js
+      env:
+        CI: true

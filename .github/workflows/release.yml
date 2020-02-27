@@ -3,8 +3,8 @@ on:
     # Sequence of patterns matched against refs/tags
     tags:
       - 'v*' # Push events to matching v*, i.e. v1.0, v20.15.10
-    branches:
-      - master  
+    # branches:
+    #   - master  
 
 name: Create Release
 
@@ -27,6 +27,6 @@ jobs:
             Changes in this Release
             - First Change
             - Second Change
-            - ${{ github.ref }}
+            - ${{ github }}
           draft: false
           prerelease: false

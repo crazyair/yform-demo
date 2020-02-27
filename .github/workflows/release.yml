@@ -109,5 +109,5 @@ jobs:
       with:
         artifacts: "release.tar.gz,foo/*.txt"
         # bodyFile: "log.md"
-        body: ${{ steps.changelog.outputs.changelog}}
+        body: ${{ steps.changelog.outputs}}
         token: ${{ secrets.GITHUB_TOKEN }}

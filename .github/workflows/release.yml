@@ -23,10 +23,11 @@ jobs:
         with:
           tag_name: ${{ github.ref }}
           release_name: Release ${{ github.ref }}
-          body: |
-            Changes in this Release
-            - First Change
-            - Second Change
-            - ${{ github }}
+          # body: |
+          #   Changes in this Release
+          #   - First Change
+          #   - Second Change
+          #   - ${{ github }} 123
+          bodyFile: "log.md"
           draft: false
           prerelease: false

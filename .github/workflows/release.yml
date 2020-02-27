@@ -25,7 +25,7 @@ jobs:
           release_name: Release ${{ github.ref }}
           body: |
             Changes in this Release
-            - First Change
-            - Second Change
+            - First Change2
+            - Second Change2
           draft: false
           prerelease: false

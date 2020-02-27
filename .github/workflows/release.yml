@@ -27,6 +27,5 @@ jobs:
             Changes in this Release
             - First Change
             - Second Change
-            - `${{ github.ref }}`
           draft: false
           prerelease: false

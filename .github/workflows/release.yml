@@ -109,6 +109,9 @@ jobs:
       with:
         node-version: ${{ env.NODE_VERSION }}
     - name: get changelog
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ env.NODE_VERSION }}
       id: changelog
       # run: |
       #     changelog=$(cat CHANGELOG.md | xargs)

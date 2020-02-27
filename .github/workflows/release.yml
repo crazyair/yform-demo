@@ -14,5 +14,5 @@ jobs:
     - uses: ncipollo/release-action@v1
       with:
         artifacts: "release.tar.gz,foo/*.txt"
-        bodyFile: "log.md"
+        # bodyFile: "log.md"
         token: ${{ secrets.GITHUB_TOKEN }}

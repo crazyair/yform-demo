@@ -15,4 +15,14 @@ echo $changelog
 # changelog="${changelog//'%'/'%25'}"
 # changelog="${changelog//$'\n'/'%0A'}"
 # changelog="${changelog//$'\r'/'%0D'}"
-echo "::set-output name=changelog::$changelog"
+# echo "::set-output name=changelog::$changelog"
+
+
+# url="http://c.biancheng.net/index.html"
+# echo ${MD#0.4.0}
+
+
+str="---aa+++aa@@@"
+echo ${str%aa*}  #结果为 ---aa+++
+echo ${str%%aa*}  #结果为 ---
+echo ${MD%%'0.4.0'*}  #结果为 ---

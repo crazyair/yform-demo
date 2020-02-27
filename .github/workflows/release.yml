@@ -101,13 +101,12 @@ jobs:
     runs-on: ubuntu-latest
     env:
      changelog_file: 'CHANGELOG.md'
-     NODE_VERSION: '10.x'
     steps:
     - uses: actions/checkout@v1
-    - uses: actions/setup-node@v1
     - name: get changelog
+      uses: actions/setup-node@v1
       with:
-        node-version: ${{ env.NODE_VERSION }}
+        node-version: 10.x
       id: changelog
       # run: |
       #     changelog=$(cat CHANGELOG.md | xargs)

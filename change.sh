@@ -1,3 +1,3 @@
-changelog=0.4.0
+changelog=$(cat CHANGELOG.md)
 echo $changelog
-echo "::set-output name=changelog::$changelog" 
+echo "::set-output name=changelog::$changelog"

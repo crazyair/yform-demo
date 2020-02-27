@@ -1,4 +1,7 @@
-import { readFileSync } from 'fs';
+// import { readFileSync } from 'fs';
+const fs = require('fs');
+
+const { readFileSync } = fs;
 
 const stringFromFile = path => {
     return readFileSync(path, 'utf-8');

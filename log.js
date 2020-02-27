@@ -17,6 +17,6 @@ changelog = changelog.replace(/%/g, '%25');
 changelog = changelog.replace(/\n/g, '%0A');
 changelog = changelog.replace(/\r/g, '%0D');
 
-const demo = `::set-output name=changelog::${changelog}`;
+const demo = `::set-output name=changelog::##${changelog}`;
 // eslint-disable-next-line no-console
 console.log(demo);

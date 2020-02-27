@@ -99,15 +99,23 @@ jobs:
 
   build:
     runs-on: ubuntu-latest
+    env:
+     changelog_file: 'CHANGELOG.md'
     steps:
     - uses: actions/checkout@v1
     - name: get changelog
       id: changelog
       run: |
-          echo "done!"
+          changelog=$(echo "0.4.0" \
+          | xargs -i sed -n '/^#\s\'"{}"'.*$/,/^#\s\([^[:space:]]\+\).*$/{//!p}' ${{ env.changelog_file }})
+          echo $changelog
+          changelog="${changelog//'%'/'%25'}"
+          changelog="${changelog//$'\n'/'%0A'}"
+          changelog="${changelog//$'\r'/'%0D'}"
+          echo "::set-output name=changelog::$changelog
     - uses: ncipollo/release-action@v1
       with:
         artifacts: "release.tar.gz,foo/*.txt"
         # bodyFile: "log.md"
-        body: ${{ steps.changelog.outputs}}
+        body: ${{ steps.changelog.outputs.changelog}}
         token: ${{ secrets.GITHUB_TOKEN }}
